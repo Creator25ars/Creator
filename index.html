@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CREATOR — мастерская</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px;
+      background-color: #0aa4db;
+    }
+    header img {
+      max-width: 200px;
+    }
+    header h1 {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #fff;
+    }
+    .directions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .direction {
+      background-color: #222;
+      padding: 30px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s;
+    }
+    .direction:hover {
+      transform: translateY(-5px);
+      background-color: #0aa4db;
+    }
+    .direction h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    .direction p {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    footer {
+      padding: 20px;
+      font-size: 0.8em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="CREATOR logo" />
+    <h1>Мастерская точной обработки: фрезеровка, резка и гравировка</h1>
+  </header>
+
+  <section class="directions">
+    <div class="direction" onclick="location.href='frez.html'">
+      <h2>Фрезер</h2>
+      <p>Примеры 2D/3D работ по дереву и пластику</p>
+    </div>
+    <div class="direction" onclick="location.href='laser.html'">
+      <h2>CO2 Лазер</h2>
+      <p>Гравировка и резка неметаллов: фанера, акрил, кожа</p>
+    </div>
+    <div class="direction" onclick="location.href='marker.html'">
+      <h2>Лазерный маркер</h2>
+      <p>Гравировка по металлу: анод, нерж, латунь и др.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 CREATOR — мастерская точной обработки
+  </footer>
+</body>
+</html>
